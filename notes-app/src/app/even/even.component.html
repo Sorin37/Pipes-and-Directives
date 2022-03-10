@@ -1,0 +1,13 @@
+<div *ngFor="let word of strings; let i = index; let even = even">
+  <p *ngIf="even">
+    {{ word | uppercase }}
+  </p>
+</div>
+<div *ngFor="let date of dates">
+  <p>
+    {{ date | date:"shortDate"}}
+  </p>
+</div>
+<p appHighlight="yellow">
+    {{textToBeRepeated | repeat:4}}
+</p>
